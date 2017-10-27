@@ -17,6 +17,7 @@ a {
   text-decoration: none;
   color: #999;
 }
+
 a:hover {
   color: #6633ff;
 }
@@ -31,6 +32,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -45,12 +47,20 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
+.home-name:active,
+.home-name:visited {
+  color: white;
+}
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
@@ -70,20 +80,32 @@ a:hover {
   overflow: hidden;
   padding-top: 60px;
 }
+
+.contact-header {
+  text-align: center;
+  background: url('images/contact.jpg') no-repeat center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 4px solid black;
+  transition: all .3s;
 }
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(-10deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -92,10 +114,12 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
+
 .location {
   background-color: #222;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -106,8 +130,33 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #ff99ff;
+}
+
+.card-image {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+}
+
+.single {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+.center {
+  text-align: center;
+}
+.contact-link {
+  color: darkblue;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 3px 8px;
+}
+.contact-link:hover {
+  color: grey;
 }
 
 ul.skills {
